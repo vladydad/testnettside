@@ -5,8 +5,6 @@ let theme = "light"
 let points2 = 0
 let points1 = 0
 
-
-
 if(change){
     change.addEventListener("click", function(){
     if(theme == "light"){
@@ -56,7 +54,3 @@ points2 = points2-1
 points2span.textContent = points2
 
 })
-
-
-
-
