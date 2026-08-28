@@ -5,6 +5,23 @@ let theme = "light"
 let points2 = 0
 let points1 = 0
 
+
+
+if(change){
+    change.addEventListener("click", function(){
+    if(theme == "light"){
+        document.getElementById("bg").style.backgroundColor = "#2b2b2b"
+        logo.style.color = "#ffffff"
+        theme = "dark"
+    }
+    else if(theme == "dark"){
+         document.getElementById("bg").style.backgroundColor = "#ffffff"
+        logo.style.color = "#000000"
+        theme = "light"
+    }
+})
+}
+
 const points1span = document.getElementById("points1span")
 const points2span = document.getElementById("points2span")
 
@@ -42,18 +59,4 @@ points2span.textContent = points2
 
 
 
-if(change){
-    change.addEventListener("click", function(){
-    if(theme == "light"){
-        document.getElementById("bg").style.backgroundColor = "#2b2b2b"
-        logo.style.color = "#ffffff"
-        theme = "dark"
-    }
-    else if(theme == "dark"){
-         document.getElementById("bg").style.backgroundColor = "#ffffff"
-        logo.style.color = "#000000"
-        theme = "light"
-    }
-})
-}
 
